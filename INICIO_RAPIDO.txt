@@ -1,0 +1,218 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║          🎭 VENTAFOLCLÓRICA - INICIO RÁPIDO 🇲🇽                  ║
+║                                                                  ║
+║     E-commerce de Accesorios y Vestuario Folclórico Mexicano    ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+
+📋 LISTA DE VERIFICACIÓN - 5 PASOS
+═══════════════════════════════════════════════════════════════════
+
+┌─ PASO 1: CREAR PROYECTO EN SUPABASE (5 min)
+│
+│  1. Ve a: https://supabase.com
+│  2. Clic en "Start your project" o "New Project"
+│  3. Completa:
+│     • Name: VentaFolclorica
+│     • Database Password: [GUARDA ESTE PASSWORD]
+│     • Region: [Elige la más cercana]
+│  4. Espera 2-3 minutos mientras se crea
+│
+└─────────────────────────────────────────────────────────────────
+
+
+┌─ PASO 2: EJECUTAR SCRIPT SQL (5 min)
+│
+│  1. En tu proyecto de Supabase, ve a:
+│     SQL Editor (icono de base de datos en el menú)
+│
+│  2. Clic en "+ New query"
+│
+│  3. Abre el archivo:
+│     📁 database/supabase_setup.sql
+│
+│  4. Copia TODO el contenido del archivo
+│
+│  5. Pega en el editor SQL de Supabase
+│
+│  6. Clic en "RUN" (abajo a la derecha)
+│
+│  7. Verifica que diga "Success. No rows returned"
+│
+└─────────────────────────────────────────────────────────────────
+
+
+┌─ PASO 3: OBTENER CREDENCIALES (2 min)
+│
+│  1. En Supabase, ve a:
+│     Settings ⚙️ > API
+│
+│  2. Copia estos DOS valores:
+│
+│     📌 Project URL:
+│        https://xxxxxxxxxxxxx.supabase.co
+│
+│     📌 anon public key:
+│        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+│        (es una clave larga)
+│
+│  3. ¡NO cierres esta página aún!
+│
+└─────────────────────────────────────────────────────────────────
+
+
+┌─ PASO 4: CONFIGURAR EL PROYECTO (2 min)
+│
+│  1. Abre el archivo:
+│     📁 js/supabase-config.js
+│
+│  2. Busca las líneas 6-7:
+│
+│     const SUPABASE_URL = 'TU_SUPABASE_URL';
+│     const SUPABASE_ANON_KEY = 'TU_SUPABASE_ANON_KEY';
+│
+│  3. Reemplaza con TUS credenciales:
+│
+│     const SUPABASE_URL = 'https://xxxxx.supabase.co';
+│     const SUPABASE_ANON_KEY = 'eyJhbGci...';
+│
+│  4. Guarda el archivo (Ctrl+S o Cmd+S)
+│
+└─────────────────────────────────────────────────────────────────
+
+
+┌─ PASO 5: EJECUTAR EL PROYECTO (3 min)
+│
+│  OPCIÓN A - Live Server (VS Code):
+│  ────────────────────────────────────
+│  1. Instala extensión "Live Server"
+│  2. Clic derecho en index.html
+│  3. "Open with Live Server"
+│
+│  OPCIÓN B - Python:
+│  ────────────────────────────────────
+│  python -m http.server 8000
+│  Luego abre: http://localhost:8000
+│
+│  OPCIÓN C - Node.js:
+│  ────────────────────────────────────
+│  npx serve
+│
+└─────────────────────────────────────────────────────────────────
+
+
+🎉 ¡LISTO! AHORA PRUEBA EL SITIO
+═══════════════════════════════════════════════════════════════════
+
+1️⃣ CREAR TU CUENTA
+   • Ve a: http://localhost:5500/login.html
+   • Clic en "Regístrate aquí"
+   • Ingresa email y contraseña (mín. 8 caracteres)
+   • Supabase enviará email de confirmación
+
+2️⃣ INICIAR SESIÓN
+   • Ingresa tus credenciales
+   • Si no confirmaste el email, ve a:
+     Supabase > Authentication > Users
+     Y verifica manualmente
+
+3️⃣ ACCEDER AL DASHBOARD
+   • Una vez logueado, ve a: /dashboard.html
+   • O haz clic en el icono del dashboard
+
+4️⃣ CREAR TU PRIMER PRODUCTO
+   • En el dashboard, clic en "Nuevo Producto"
+   • Completa el formulario
+   • Clic en "Guardar Producto"
+
+5️⃣ VER EN LA PÁGINA PRINCIPAL
+   • Ve a: /index.html
+   • Tu producto aparecerá en "Productos Destacados"
+   • Prueba agregarlo al carrito
+
+
+📁 ARCHIVOS IMPORTANTES
+═══════════════════════════════════════════════════════════════════
+
+📖 README.md              → Documentación completa del proyecto
+📖 SETUP.md               → Guía de instalación detallada
+📖 PROYECTO_COMPLETADO.md → Resumen de todo lo creado
+🔧 supabase-config.js     → AQUÍ configuras tus credenciales
+🗄️ supabase_setup.sql     → Script de la base de datos
+
+
+🎨 PÁGINAS DEL SITIO
+═══════════════════════════════════════════════════════════════════
+
+🏠 /index.html      → Página principal (público)
+🔐 /login.html      → Login y registro
+📊 /dashboard.html  → Panel administrativo (requiere login)
+
+
+🔧 SOLUCIÓN DE PROBLEMAS COMUNES
+═══════════════════════════════════════════════════════════════════
+
+❌ "Invalid API key"
+   → Verifica las credenciales en supabase-config.js
+
+❌ "CORS policy error"
+   → Usa un servidor local (no abras el HTML directamente)
+
+❌ Los productos no cargan
+   → Verifica que ejecutaste el script SQL en Supabase
+
+❌ No puedo crear productos
+   → Asegúrate de estar logueado
+   → Verifica que las categorías existan en la BD
+
+❌ Error al registrarme
+   → La contraseña debe tener mínimo 8 caracteres
+   → Verifica tu conexión a internet
+
+
+🎯 PRÓXIMOS PASOS SUGERIDOS
+═══════════════════════════════════════════════════════════════════
+
+1. Personaliza los colores en css/styles.css (líneas 6-30)
+2. Agrega más categorías en Supabase (tabla categorias)
+3. Sube tus propias imágenes de productos
+4. Personaliza los textos del Hero Section
+5. Agrega más productos desde el dashboard
+
+
+📚 MÁS INFORMACIÓN
+═══════════════════════════════════════════════════════════════════
+
+• Documentación de Supabase: https://supabase.com/docs
+• Tutoriales de CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+• JavaScript ES6: https://developer.mozilla.org/es/docs/Web/JavaScript
+
+
+💡 CONSEJOS
+═══════════════════════════════════════════════════════════════════
+
+✓ Usa imágenes de buena calidad (min. 500x500px)
+✓ Completa todas las descripciones de productos
+✓ Revisa la consola del navegador (F12) si hay errores
+✓ Haz backups regulares de tu base de datos
+✓ Lee la documentación completa en SETUP.md
+
+
+📞 SOPORTE
+═══════════════════════════════════════════════════════════════════
+
+Si tienes problemas:
+1. Lee SETUP.md (guía detallada)
+2. Revisa la consola del navegador (F12)
+3. Verifica que Supabase esté configurado correctamente
+
+
+═══════════════════════════════════════════════════════════════════
+
+         ¡DISFRUTA TU NUEVO E-COMMERCE! 🎉
+
+    "Viste tus Raíces, Baila con el Corazón" 🎭🇲🇽
+
+═══════════════════════════════════════════════════════════════════

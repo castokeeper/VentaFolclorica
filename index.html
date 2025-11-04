@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la colección más auténtica de trajes y accesorios folclóricos mexicanos">
+    <title>VentaFolclórica - Viste tus Raíces, Baila con el Corazón</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header / Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-heart"></i>
+                            <span class="logo-text">VentaFolclórica</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Menu de navegación -->
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                        <li><a href="#productos" class="nav-link">Productos</a></li>
+                        <li><a href="#categorias" class="nav-link">Categorías</a></li>
+                        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                    
+                    <!-- Iconos de usuario y carrito -->
+                    <div class="nav-icons">
+                        <button class="icon-btn" aria-label="Buscar">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href="dashboard.html" class="icon-btn hidden" id="dashboardLink" title="Dashboard" aria-label="Dashboard">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </a>
+                        <a href="login.html" class="icon-btn" id="loginBtn" aria-label="Iniciar Sesión" title="Iniciar Sesión">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <button class="icon-btn hidden" id="userBtn" aria-label="Perfil de Usuario">
+                            <i class="fas fa-user-circle"></i>
+                        </button>
+                        <button class="icon-btn cart-btn" aria-label="Carrito de Compras">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </button>
+                        <button class="mobile-toggle" id="mobileToggle" aria-label="Menú de Navegación">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Viste tus Raíces,</span>
+                        <span class="title-line accent">Baila con el Corazón</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Descubre la colección más auténtica de trajes y accesorios folclóricos
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#productos" class="btn btn-primary">
+                            Ver Colección
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#categorias" class="btn btn-secondary">
+                            Explorar Categorías
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-decorations">
+                    <div class="decoration decoration-1"></div>
+                    <div class="decoration decoration-2"></div>
+                    <div class="decoration decoration-3"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span>Desliza</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Envío Gratis</h3>
+                    <p>En compras mayores a $999 MXN</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>100% Artesanal</h3>
+                    <p>Hecho a mano por artesanos mexicanos</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Compra Segura</h3>
+                    <p>Protección en todas tus transacciones</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>30 Días de Garantía</h3>
+                    <p>Devoluciones sin complicaciones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados (Placeholder - Lo desarrollaremos después) -->
+    <section class="productos-destacados" id="productos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Productos Destacados</h2>
+                <p class="section-subtitle">Lo mejor de nuestra colección</p>
+            </div>
+            
+            <div class="productos-grid" id="productosGrid">
+                <!-- Skeleton loading -->
+                <div class="product-skeleton"></div>
+                <div class="product-skeleton"></div>
+                <div class="product-skeleton"></div>
+                <div class="product-skeleton"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>VentaFolclórica</h4>
+                    <p>Celebrando la cultura mexicana a través de la danza y el arte.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#categorias">Categorías</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Atención al Cliente</h4>
+                    <ul>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Suscríbete para recibir ofertas especiales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" aria-label="Suscribirse al Newsletter" title="Suscribirse">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 VentaFolclórica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- Para GitHub Pages Demo, usa demo.js -->
+    <!-- Para producción con Supabase, usa main.js y home.js -->
+    <script src="js/demo.js"></script>
+    
+    <!-- Para desarrollo local con Supabase, comenta la línea anterior y descomenta estas:
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/home.js"></script>
+    -->
+</body>
+</html>

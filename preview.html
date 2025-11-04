@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentaFolclórica - Demo Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #f7fafc;
+            color: #4a5568;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .btn-secondary:hover {
+            background: #edf2f7;
+            transform: translateY(-3px);
+        }
+        
+        .features {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            text-align: left;
+        }
+        
+        .feature {
+            padding: 1.5rem;
+            background: #f7fafc;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h3 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .feature p {
+            color: #718096;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 2rem;
+            }
+            
+            .buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🎭</div>
+        <h1>VentaFolclórica</h1>
+        <p>
+            <strong>E-commerce de Accesorios y Vestuario de Danza Folclórica</strong><br>
+            Un sitio web completo con diseño moderno inspirado en la cultura mexicana
+        </p>
+        
+        <div class="buttons">
+            <a href="index.html" class="btn btn-primary">
+                🚀 Ver Demo Completa
+            </a>
+            <a href="https://github.com/TU_USUARIO/VentaFolclorica" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                📖 Ver en GitHub
+            </a>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🎨 Diseño Atractivo</h3>
+                <p>Interfaz moderna con colores vibrantes inspirados en la cultura mexicana</p>
+            </div>
+            
+            <div class="feature">
+                <h3>📱 100% Responsive</h3>
+                <p>Optimizado para móviles, tablets y escritorio</p>
+            </div>
+            
+            <div class="feature">
+                <h3>🛒 Carrito Funcional</h3>
+                <p>Sistema de carrito de compras completamente funcional</p>
+            </div>
+            
+            <div class="feature">
+                <h3>⚡ Rápido y Ligero</h3>
+                <p>Carga instantánea sin necesidad de servidor</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        console.log('🎭 VentaFolclórica - Demo Preview');
+        console.log('💡 Haz clic en "Ver Demo Completa" para explorar el sitio');
+    </script>
+</body>
+</html>
