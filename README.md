@@ -1,7 +1,5 @@
 # 🎭 Raíces y movimientos - Plataforma Educativa
 
-<a id="top"></a>
-
 ## 📖 Descripción
 
 **Raíces y movimientos** es una plataforma educativa interactiva dedicada a preservar y compartir la rica tradición de la danza folclórica mexicana. Nuestro objetivo es hacer accesible el aprendizaje de estas hermosas expresiones culturales a través de contenido didáctico, visual y entretenido.
