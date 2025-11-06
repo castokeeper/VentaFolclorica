@@ -1,8 +1,10 @@
-# 🎭 Danza Folclórica México - Plataforma Educativa
+# 🎭 Raíces y movimientos - Plataforma Educativa
+
+<a id="top"></a>
 
 ## 📖 Descripción
 
-**Danza Folclórica MX** es una plataforma educativa interactiva dedicada a preservar y compartir la rica tradición de la danza folclórica mexicana. Nuestro objetivo es hacer accesible el aprendizaje de estas hermosas expresiones culturales a través de contenido didáctico, visual y entretenido.
+**Raíces y movimientos** es una plataforma educativa interactiva dedicada a preservar y compartir la rica tradición de la danza folclórica mexicana. Nuestro objetivo es hacer accesible el aprendizaje de estas hermosas expresiones culturales a través de contenido didáctico, visual y entretenido.
 
 > 🌐 **[Ver Demo en GitHub Pages](https://castokeeper.github.io/VentaFolclorica/)** ← ¡Explora la cultura mexicana!
 
@@ -208,4 +210,4 @@ Este proyecto es de código abierto y está disponible bajo la licencia MIT. Si�
 
 **Hecho con** ❤️ **para la comunidad mexicana y el mundo**
 
-[⬆ Volver arriba](#-danza-folclórica-méxico---plataforma-educativa)
+[⬆ Volver arriba](#top)

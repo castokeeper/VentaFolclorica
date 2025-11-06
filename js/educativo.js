@@ -1,5 +1,5 @@
 // ========================================
-// DANZA FOLCLÓRICA EDUCATIVA
+// RAÍCES Y MOVIMIENTOS - EDUCATIVO
 // ========================================
 
 // Datos de la Línea de Tiempo - Historia
@@ -388,7 +388,7 @@ function setupNewsletter() {
 // ========================================
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('🎭 Danza Folclórica MX - Plataforma Educativa');
+    console.log('🎭 Raíces y movimientos - Plataforma Educativa');
     
     // Renderizar contenido
     renderHistoria();
