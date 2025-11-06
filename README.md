@@ -1,238 +1,211 @@
-# VentaFolclórica 🎭
+# 🎭 Danza Folclórica México - Plataforma Educativa
 
-## Sitio E-commerce de Accesorios y Vestuario de Danza Folclórica
+## 📖 Descripción
 
-> 🌐 **[Ver Demo en GitHub Pages](https://tu-usuario.github.io/VentaFolclorica/)** ← ¡Pruébalo ahora!
+**Danza Folclórica MX** es una plataforma educativa interactiva dedicada a preservar y compartir la rica tradición de la danza folclórica mexicana. Nuestro objetivo es hacer accesible el aprendizaje de estas hermosas expresiones culturales a través de contenido didáctico, visual y entretenido.
 
-### 🚀 Características
+> 🌐 **[Ver Demo en GitHub Pages](https://castokeeper.github.io/VentaFolclorica/)** ← ¡Explora la cultura mexicana!
 
-**✨ Sistema Completo E-commerce:**
+## ✨ Características
 
-- 🔐 **Autenticación** - Login, registro y sesiones con Supabase
-- 📊 **Dashboard Administrativo** - CRUD completo de productos
-- 🗄️ **Base de Datos** - PostgreSQL con Supabase (RLS habilitado)
-- 🛒 **Carrito de Compras** - Funcional con LocalStorage
-- 📱 **Diseño Responsive** - Optimizado para todos los dispositivos
-- 🎨 **UI Moderna** - Diseño vibrante inspirado en la cultura mexicana
-- 🌐 **Demo en Vivo** - Funciona sin servidor en GitHub Pages
+### 🏛️ Historia de la Danza
 
-### 🎯 Dos Modos de Uso
+- **Línea de tiempo interactiva** desde la era prehispánica hasta la actualidad
+- Imágenes representativas de cada época
+- Contexto histórico y cultural detallado
 
-#### 🌐 Modo Demo (GitHub Pages)
+### 🗺️ Danzas por Región
 
-- ✅ **Sin configuración** - Funciona inmediatamente
-- ✅ **Sin servidor** - Ideal para mostrar el diseño
-- ✅ **Productos estáticos** - 8 productos de demostración
-- 📖 Ver: `GITHUB_PAGES.md` para instrucciones
+- **Jalisco**: Jarabe Tapatío - La danza más emblemática
+- **Veracruz**: La Bamba - Son jarocho festivo
+- **Chiapas**: Parachicos - Patrimonio de la Humanidad
+- **Oaxaca**: Guelaguetza - Celebración de la diversidad
 
-#### 🔐 Modo Producción (Con Supabase)
+### 📚 Cómo Aprender a Bailar
 
-- ✅ **Base de datos real** - PostgreSQL
-- ✅ **Autenticación completa** - Sistema de usuarios
-- ✅ **Dashboard funcional** - Administra productos
-- 📖 Ver: `SETUP.md` para instrucciones
+- **Sistema de 4 pasos** progresivos:
+  1. Postura Básica (Nivel: Fácil)
+  2. Zapateado Básico (Nivel: Media)
+  3. Movimiento de Falda (Nivel: Media)
+  4. Coordinación y Ritmo (Nivel: Avanzada)
+- Tips prácticos para cada paso
+- Indicadores de dificultad
+- Botones interactivos de práctica
 
-### 🎨 Identidad Visual
+### 👗 Vestuario Tradicional
 
-**Paleta de Colores:**
+- **Vestido de Jalisco**: Falda amplia y bordados florales
+- **Traje de Charro**: Elegancia y tradición masculina
+- **Huipil Oaxaqueño**: Bordados ancestrales
+- **Accesorios Tradicionales**: Rebozos, joyería y flores
 
-- **Terracota** (#D2691E) - Color principal, representa la tierra y tradición
-- **Azul Cobalto** (#0047AB) - Color secundario, profundidad y confianza
-- **Amarillo Sol** (#FFD700) - Acentos vibrantes, celebración y alegría
-- **Blanco Crudo** (#FAF9F6) - Fondo principal, limpieza y espacio
-- **Rosa Mexicano** (#E4007C) - Acentos especiales
-- **Verde Esmeralda** (#00A86B) - Elementos destacados
+## 🎨 Tecnologías Utilizadas
 
-**Tipografía:**
+- **HTML5**: Estructura semántica moderna
+- **CSS3**: Diseño responsivo con variables CSS y animaciones
+- **JavaScript ES6+**: Interactividad y contenido dinámico
+- **Font Awesome 6.4.0**: Iconografía
+- **Google Fonts**: Tipografía (Montserrat + Covered By Your Grace)
 
-- **Display:** 'Covered By Your Grace' - Para títulos con personalidad artesanal
-- **Body:** 'Montserrat' - Sans-serif moderna y legible para textos
+## 🎨 Paleta de Colores Mexicana
 
-### � Guía de Instalación Rápida
+```css
+--color-terracota: #D2691E      /* Tierra mexicana */
+--color-cobalto: #0047AB        /* Cielo profundo */
+--color-amarillo-sol: #FFD700   /* Sol radiante */
+--color-rosa-mexicano: #E4007C  /* Vibrante y alegre */
+--color-verde-esmeralda: #00A86B /* Naturaleza */
+```
 
-1. **Lee el archivo `SETUP.md`** - Contiene instrucciones detalladas paso a paso
-2. **Crea tu proyecto en Supabase** (gratuito)
-3. **Ejecuta el script SQL** de `database/supabase_setup.sql`
-4. **Configura las credenciales** en `js/supabase-config.js`
-5. **Ejecuta un servidor local** (Live Server, Python, etc.)
-6. **¡Listo!** 🎉
-
-### 📁 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 
 ```text
 VentaFolclorica/
-├── index.html              # Página principal (Hero + Productos)
-├── login.html              # Sistema de autenticación
-├── dashboard.html          # Panel administrativo
-│
+├── index.html              # Página principal educativa
 ├── css/
-│   ├── styles.css          # Estilos globales y componentes
-│   ├── auth.css            # Estilos de login/registro
-│   └── dashboard.css       # Estilos del panel admin
-│
+│   └── styles.css          # Estilos completos (incluyendo educativos)
 ├── js/
-│   ├── supabase-config.js  # ⚙️ Configuración de Supabase (ACTUALIZAR AQUÍ)
-│   ├── main.js             # JavaScript principal
-│   ├── auth.js             # Lógica de autenticación
-│   ├── dashboard.js        # Lógica CRUD del dashboard
-│   └── home.js             # Carga de productos en home
-│
-├── database/
-│   └── supabase_setup.sql  # Script completo para la BD
-│
+│   └── educativo.js        # Lógica y contenido dinámico
 ├── README.md               # Este archivo
-└── SETUP.md               # Guía detallada de instalación
+├── CAMBIOS.md              # Guía de transformación
+└── CONFLICTOS_CSS.md       # Reporte de conflictos resueltos
 ```
 
-### 🗄️ Base de Datos
+## 🚀 Instalación y Uso
 
-**Tablas implementadas:**
+### Opción 1: Visualización Local
 
-- ✅ `categorias` - Categorías de productos
-- ✅ `productos` - Catálogo completo con precios, stock, imágenes
-- ✅ `clientes` - Información de usuarios
-- ✅ `ordenes` - Órdenes de compra
-- ✅ `orden_items` - Detalles de cada orden
-- ✅ `valoraciones` - Reseñas de productos
+1. **Clona o descarga** este repositorio
+2. **Abre** el archivo `index.html` en tu navegador favorito
+3. **Disfruta** aprendiendo sobre danza folclórica
 
-**Características de la BD:**
+### Opción 2: GitHub Pages
 
-- Row Level Security (RLS) habilitado
-- Triggers automáticos para actualización
-- Índices optimizados
-- Políticas de seguridad configuradas
+Este sitio está optimizado para ser desplegado en **GitHub Pages**:
 
-### ✅ Funcionalidades Completadas
+1. Sube el proyecto a tu repositorio de GitHub
+2. Ve a **Settings** → **Pages**
+3. Selecciona la rama `main` y la carpeta `/root`
+4. Guarda y espera unos minutos
+5. Tu sitio estará disponible en `https://tuusuario.github.io/nombre-repo`
 
-#### Frontend
+### Opción 3: Servidor Local
 
-1. **Hero Section** - Sección principal con:
-   - Título impactante: "Viste tus Raíces, Baila con el Corazón"
-   - Subtítulo descriptivo
-   - Dos CTAs (Call-to-Action)
-   - Decoraciones animadas con patrón mexicano
-   - Diseño responsive
+```bash
+# Con Python 3
+python -m http.server 8000
 
-2. **Navegación** - Header fijo con:
-   - Logo personalizado
-   - Menú de navegación
-   - Acceso condicional (login/dashboard)
-   - Carrito de compras funcional
-   - Menú móvil responsive
+# Con Node.js (npx)
+npx http-server
 
-3. **Sección de Características** - 4 beneficios principales
+# Con PHP
+php -S localhost:8000
+```
 
-4. **Catálogo de Productos**:
-   - Carga dinámica desde Supabase
-   - Tarjetas con hover effects
-   - Precios y badges
-   - Botón "Agregar al Carrito"
-   - Productos placeholder si no hay datos
+Luego accede a `http://localhost:8000`
 
-5. **Footer** - Completo con enlaces y newsletter
+## ✨ Características Educativas
 
-#### Autenticación
+### 📜 Historia de la Danza Folclórica
 
-- ✅ Login con email y contraseña
-- ✅ Registro de nuevos usuarios
-- ✅ Validación de formularios
-- ✅ Sesiones persistentes
-- ✅ Logout seguro
-- ✅ Protección de rutas
+Línea de tiempo interactiva con 4 períodos históricos:
 
-#### Dashboard Administrativo
+- 🏛️ **Era Prehispánica**: Rituales y danzas ceremoniales
+- 🎭 **Época Colonial**: Fusión de culturas europea e indígena
+- 🇲🇽 **México Independiente**: Consolidación de identidad nacional
+- 🎊 **Era Moderna**: Preservación y difusión global
 
-- ✅ Panel con estadísticas en tiempo real
-- ✅ **CRUD Completo de Productos**:
-  - Crear productos nuevos
-  - Editar productos existentes
-  - Eliminar productos
-  - Vista en tabla optimizada
-- ✅ **Filtros y Búsqueda**:
-  - Búsqueda por nombre/descripción
-  - Filtro por categoría
-  - Filtro por estado
-- ✅ Modal para crear/editar productos
-- ✅ Sidebar de navegación
-- ✅ Diseño responsive
-- ✅ Gestión de categorías
+### 🗺️ Regiones Folclóricas
 
-### 🛠️ Tecnologías Utilizadas
+Explora las danzas tradicionales de 4 regiones:
 
-**Frontend:**
+- **Jalisco**: Jarabe Tapatío, el baile nacional
+- **Veracruz**: La Bamba y Son Jarocho
+- **Chiapas**: Danzas ceremoniales mayas
+- **Oaxaca**: Guelaguetza y celebraciones comunitarias
 
-- HTML5 semántico
-- CSS3 (Variables, Grid, Flexbox, Animaciones)
-- JavaScript ES6+ (Módulos)
-- Font Awesome (iconos)
-- Google Fonts
+### 📚 Guía de Aprendizaje
 
-**Backend:**
+Guía progresiva con videos y pasos detallados:
 
-- Supabase (Backend as a Service)
-- PostgreSQL (Base de datos)
-- Supabase Auth (Autenticación)
-- Row Level Security (Seguridad)
+1. **Introducción**: Conceptos básicos del folclor
+2. **Pasos Básicos**: Zapateo, vueltas y movimientos fundamentales
+3. **Coreografías Simples**: Secuencias para principiantes
+4. **Presentación**: Tips para tu primera actuación
 
-### 🔐 Seguridad
+### 👗 Elementos del Vestuario
 
-- **Autenticación JWT** con Supabase
-- **Row Level Security** en todas las tablas
-- **Políticas de acceso** granulares
-- **Validación** en frontend y backend
-- **Sesiones** seguras y persistentes
+Conoce los elementos del vestuario folclórico:
 
-### 📱 Responsive Design
+- **Vestido de China Poblana**: Icónico traje nacional
+- **Traje de Charro**: Elegancia masculina
+- **Rebozo**: Símbolo de tradición
+- **Calzado**: Zapatos de folclor y huaraches
 
-- ✅ Mobile First approach
-- ✅ Breakpoints optimizados
-- ✅ Menú móvil funcional
-- ✅ Tablas responsivas
-- ✅ Imágenes optimizadas
+## 🎨 Identidad Visual
 
-### 🔄 Próximos Pasos Sugeridos
+El sitio utiliza una paleta de colores inspirada en México:
 
-1. **Página de Detalle de Producto** - Vista completa con galería
-2. **Sistema de Checkout** - Proceso completo de compra
-3. **Integración de Pagos** - Stripe, PayPal, MercadoPago
-4. **Panel de Órdenes** - Gestión completa para clientes
-5. **Sistema de Notificaciones** - Emails automáticos
-6. **Analytics** - Estadísticas de ventas
-7. **Sistema de Cupones** - Descuentos y promociones
-8. **Wishlist** - Lista de deseos
+- **Terracota** (#D2691E): Tierra y tradición
+- **Azul Cobalto** (#0047AB): Profundidad y confianza
+- **Amarillo Sol** (#FFD700): Celebración y alegría
+- **Rosa Mexicano** (#E4007C): Vibrante cultura
+- **Verde Esmeralda** (#00A86B): Naturaleza
 
-### 💡 Cómo Usar
+**Tipografía:**
 
-**Para Desarrolladores:**
+- **Display**: 'Covered By Your Grace' - Títulos con personalidad artesanal
+- **Body**: 'Montserrat' - Sans-serif moderna y legible
 
-1. Lee `SETUP.md` para instrucciones completas
-2. Configura Supabase
-3. Ejecuta el servidor local
-4. Comienza a desarrollar
+## 📱 Diseño Responsivo
 
-**Para Probar:**
+- **Desktop** (1200px+): Vista completa con 3-4 columnas
+- **Tablet** (768px-1199px): Adaptación a 2 columnas
+- **Mobile** (< 768px): Vista optimizada de 1 columna
 
-1. Abre `index.html` con Live Server
-2. Navega a `/login.html`
-3. Crea una cuenta
-4. Accede al dashboard en `/dashboard.html`
-5. Crea tus primeros productos
+## 🎯 Próximas Funcionalidades
 
-### 🌟 Filosofía del Proyecto
+- [ ] Videos tutoriales integrados
+- [ ] Sistema de búsqueda de danzas
+- [ ] Glosario de términos
+- [ ] Galería de música tradicional
+- [ ] Directorio de grupos de danza
+- [ ] Calendario de festivales
+- [ ] Quiz interactivo de conocimientos
+- [ ] Modo oscuro
 
-"Viste tus Raíces, Baila con el Corazón" - Este proyecto busca conectar a las personas con la rica tradición de la danza folclórica mexicana, ofreciendo productos auténticos hechos por artesanos locales.
+## 🤝 Contribuciones
 
-### 📞 Soporte
+¡Las contribuciones son bienvenidas! Si deseas mejorar esta plataforma educativa:
 
-Si encuentras algún problema:
+1. **Fork** el proyecto
+2. Crea una **rama** para tu feature (`git checkout -b feature/NuevaCaracteristica`)
+3. **Commit** tus cambios (`git commit -m 'Agrega nueva característica'`)
+4. **Push** a la rama (`git push origin feature/NuevaCaracteristica`)
+5. Abre un **Pull Request**
 
-1. Revisa `SETUP.md` para solución de problemas comunes
-2. Verifica la consola del navegador (F12)
-3. Asegúrate de que Supabase está configurado correctamente
+### Áreas de Contribución
 
----
+- 📝 Agregar más regiones y danzas
+- 🎥 Crear contenido multimedia (videos, imágenes)
+- 🌐 Traducción a otros idiomas
+- 🎨 Mejoras en diseño y UX
+- 📚 Contenido educativo adicional
+- 🐛 Reporte y corrección de bugs
 
-**Versión:** 2.0.0 (Con Supabase & Dashboard)  
-**Última actualización:** Noviembre 2025
+## 📄 Licencia
 
-**Desarrollado con ❤️ para celebrar la cultura mexicana** 🇲🇽
+Este proyecto es de código abierto y está disponible bajo la licencia MIT. Siéntete libre de usar, modificar y distribuir el código.
+
+## 💖 Créditos
+
+- **Imágenes**: Unsplash (uso libre)
+- **Iconos**: Font Awesome
+- **Tipografías**: Google Fonts
+- **Inspiración**: La rica cultura folclórica de México 🇲🇽
+
+### 🎭 Preservando y compartiendo la tradición 🇲🇽
+
+**Hecho con** ❤️ **para la comunidad mexicana y el mundo**
+
+[⬆ Volver arriba](#-danza-folclórica-méxico---plataforma-educativa)
